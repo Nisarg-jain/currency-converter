@@ -1,16 +1,16 @@
-# React + Vite
+# 💱 React Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Description
+A sleek, responsive, and fast currency converter application built with React and Vite. This project fetches real-time exchange rates from an external API, allowing users to instantly convert values between multiple global currencies. It serves as a practical implementation of core React concepts like `useState`, `useEffect`, and custom hooks.
 
-Currently, two official plugins are available:
+## ✨ Features
+* **Real-Time Data:** Fetches up-to-date currency exchange rates via API.
+* **Instant Conversion:** Calculates the exchanged amount immediately as the user types.
+* **Swap Functionality:** A handy button to instantly swap the "From" and "To" currencies.
+* **Responsive UI:** Clean and modern interface that works perfectly on both desktop and mobile devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+* **Frontend:** React.js (Vite)
+* **Styling:** CSS / Tailwind CSS (Update this based on what you used)
+* **Logic:** Modern JavaScript (ES6+), React Hooks (`useState`, `useEffect`, `useCallback`)
+* **API:**
