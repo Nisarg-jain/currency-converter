@@ -62,7 +62,7 @@ function App() {
   return (
     <div 
       className="w-full min-h-screen flex flex-col lg:flex-row gap-6 justify-center items-start lg:items-center p-4 sm:p-6 bg-cover bg-center"
-      style={{ backgroundImage: `url($\{backgroundImg})` }}
+      style={{ backgroundImage: `url(${backgroundImg})` }}
     >
       <div className="w-full max-w-md mx-auto lg:mx-0 border border-white/30 rounded-3xl p-6 sm:p-8 backdrop-blur-xl bg-white/10 shadow-2xl glow-card">
         <h1 className="text-3xl font-bold text-white text-center mb-6 tracking-wide drop-shadow-md">
@@ -84,7 +84,7 @@ function App() {
           <div className="relative w-full h-1 my-3">
             <button
               className="absolute left-1/2 top-1/2 border-4 border-slate-800 rounded-full bg-blue-500 text-white p-2 shadow-lg hover:bg-blue-600 transition-all duration-300 cursor-pointer glow-button hover:shadow-cyan-500/50"
-              style={{ transform: `translate(-50%, -50%) rotate($\{rotation}deg)` }}
+              style={{ transform: `translate(-50%, -50%) rotate(${rotation}deg)` }}
               onClick={swapCurrency}
             >
               <svg
@@ -118,16 +118,17 @@ function App() {
           {exchangeRate > 0 && amount && (
             <div className="mb-4 p-3 bg-white/10 rounded-xl border border-white/20 text-white text-center text-sm backdrop-blur-sm glow-rate">
               <p className="text-white/70 text-xs">Exchange Rate</p>
-              <p className="text-lg font-bold text-cyan-300">1 {fromCurrency.toUpperCase()} = {exchangeRate.toFixed(4)} {toCurrency.toUpperCase()}</p>
+              <p className="text-lg font-bold text-cyan-300">1 {fromCurrency.toUpperCase()} = {exchangeRate.toFixed(2)} {toCurrency.toUpperCase()}</p>
             </div>
           )}
 
           {convertedAmount && (
             <button
               onClick={() => copyToClipboard(convertedAmount)}
-              className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-xl font-semibold text-sm hover:from-cyan-600 hover:to-blue-700 transition-all shadow-lg glow-button"
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 text-white px-4 py-3 rounded-2xl font-semibold text-sm tracking-wide hover:scale-[1.02] hover:from-cyan-300 hover:via-blue-500 hover:to-indigo-700 transition-all duration-300 shadow-[0_10px_30px_rgba(6,182,212,0.35)] border border-white/20 glow-button"
             >
-              📋 Copy Result: {convertedAmount}
+              <span className="text-base">📋</span>
+              <span>Copy Result: {convertedAmount}</span>
             </button>
           )}
         </div>
