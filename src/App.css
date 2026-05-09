@@ -1,0 +1,102 @@
+﻿/* Glow Effects */
+.glow-card {
+  animation: glow-card-animation 3s ease-in-out infinite;
+}
+
+@keyframes glow-card-animation {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 0 40px rgba(6, 182, 212, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.5), 0 0 60px rgba(6, 182, 212, 0.2);
+  }
+}
+
+.glow-button {
+  animation: glow-button-animation 2s ease-in-out infinite;
+}
+
+@keyframes glow-button-animation {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5), 0 0 20px rgba(6, 182, 212, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.7), 0 0 30px rgba(6, 182, 212, 0.5);
+  }
+}
+
+.glow-input {
+  transition: all 0.3s ease;
+}
+
+.glow-input:focus-within {
+  animation: glow-input-animation 0.6s ease-out forwards;
+}
+
+@keyframes glow-input-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.glow-rate {
+  animation: glow-rate-animation 2s ease-in-out infinite;
+}
+
+@keyframes glow-rate-animation {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.3), inset 0 0 10px rgba(34, 197, 94, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.5), inset 0 0 15px rgba(34, 197, 94, 0.2);
+  }
+}
+
+.glow-history {
+  animation: glow-history-animation 3s ease-in-out infinite;
+}
+
+@keyframes glow-history-animation {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.3), 0 0 30px rgba(59, 130, 246, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(6, 182, 212, 0.5), 0 0 40px rgba(59, 130, 246, 0.2);
+  }
+}
+
+/* Scrollbar Styling */
+.glow-history::-webkit-scrollbar {
+  width: 6px;
+}
+
+.glow-history::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.glow-history::-webkit-scrollbar-thumb {
+  background: rgba(6, 182, 212, 0.4);
+  border-radius: 10px;
+}
+
+.glow-history::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.6);
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .glow-card {
+    padding: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 1.875rem;
+  }
+}
