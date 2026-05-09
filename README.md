@@ -13,4 +13,13 @@ A sleek, responsive, and fast currency converter application built with React an
 * **Frontend:** React.js (Vite)
 * **Styling:** CSS / Tailwind CSS (Update this based on what you used)
 * **Logic:** Modern JavaScript (ES6+), React Hooks (`useState`, `useEffect`, `useCallback`)
-* **API:**
+
+## 🔗 API Reference
+
+This project uses the free and open-source Currency API created by Fawaz Ahmed to fetch daily updated exchange rates.
+
+* **GitHub Repository / Documentation:** [fawazahmed0/exchange-api](https://github.com/fawazahmed0/exchange-api)
+* **Primary Endpoint Used:** `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/{currency}.json`
+* **Fallback Endpoint:** `https://latest.currency-api.pages.dev/v1/currencies/{currency}.json`
+
+**Data Update Frequency:** The exchange rates are updated once daily.
